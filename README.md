@@ -3,11 +3,14 @@
 
 ## MAIN API ENPOINTS
 ```bash
-/auth/users
-/auth/token/login
-/restaurant/api-token-auth
-/restaurant/booking-api
-/restaurant/menu-api
+/admin/
+api/product/products-list/
+api/account/token/
+api/account/token/refresh/
+api/account/login/
+api/account/logout_user/
+api/account/register/
+
 ```
 ## RUN APP
 
