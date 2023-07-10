@@ -1,0 +1,196 @@
+{
+    "info": {
+        "_postman_id": "1579faaa-1279-4951-bf59-f41ef2ba837c",
+        "name": "ACCOUNT",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "JWT LOGIN",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://127.0.0.1:8000/api/token/",
+                    "path": [
+                        "api",
+                        "token"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8000"
+                },
+                "body": {
+                    "mode": "formdata",
+                    "formdata": [
+                        {
+                            "key": "username",
+                            "value": "admin",
+                            "type": "default"
+                        },
+                        {
+                            "key": "password",
+                            "value": "123",
+                            "type": "default"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "JWT REFRESH TOKEN",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://127.0.0.1:8000/api/token/refresh/",
+                    "path": [
+                        "api",
+                        "token",
+                        "refresh"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8000"
+                },
+                "body": {
+                    "mode": "formdata",
+                    "formdata": [
+                        {
+                            "key": "refresh",
+                            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY4ODkwNzUwMywiaWF0IjoxNjg4ODIxMTAzLCJqdGkiOiJiOGRiMDMwOWViMmQ0MmU2YjIzMTY1NzViZDM3MGMyYSIsInVzZXJfaWQiOjF9.1XXtINuDIdfoCy1vZch9W-SlhIqmHbeNuGX1SKmufD0",
+                            "type": "default"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "USER REGISTRATION",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://127.0.0.1:8000/register/",
+                    "path": [
+                        "register"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8000"
+                },
+                "body": {
+                    "mode": "formdata",
+                    "formdata": [
+                        {
+                            "key": "username",
+                            "value": "adityat3840",
+                            "type": "default"
+                        },
+                        {
+                            "key": "email",
+                            "value": "adityat3840@gmail.com",
+                            "type": "default"
+                        },
+                        {
+                            "key": "password",
+                            "value": "123456789",
+                            "type": "default"
+                        },
+                        {
+                            "key": "password2",
+                            "value": "123456789",
+                            "type": "default"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "LOGIN",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://127.0.0.1:8000/login/",
+                    "path": [
+                        "login"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8000"
+                },
+                "body": {
+                    "mode": "formdata",
+                    "formdata": [
+                        {
+                            "key": "username",
+                            "value": "admin",
+                            "type": "default"
+                        },
+                        {
+                            "key": "password",
+                            "value": "123",
+                            "type": "default"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "LOGOUT",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://127.0.0.1:8000//api/account/logout_user/",
+                    "path": [
+                        "api",
+                        "account",
+                        "logout_user"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8000"
+                },
+                "header": [
+                    {
+                        "key": "Authorization",
+                        "value": "Token 0a5b40c28f326522171b8fac7bac0401bc25fe2b"
+                    },
+                    {
+                        "key": "Accept",
+                        "value": "*/*",
+                        "disabled": true
+                    },
+                    {
+                        "key": "User-Agent",
+                        "value": "Thunder Client (https://www.thunderclient.com)",
+                        "disabled": true
+                    }
+                ]
+            }
+        }
+    ]
+}

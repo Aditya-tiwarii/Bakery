@@ -1,0 +1,75 @@
+{
+    "info": {
+        "_postman_id": "d137ea5a-f49f-4c84-93ed-992c9931b79b",
+        "name": "PRODUCT",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "POST PRODUCT",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://127.0.0.1:8000/products/",
+                    "path": [
+                        "products"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8000"
+                },
+                "header": [
+                    {
+                        "key": "Authorization",
+                        "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg4OTg1NDA1LCJpYXQiOjE2ODg5ODUxMDUsImp0aSI6ImMyZWM2MjYxYzcxZjRjNTI4ZmVjMGQ4ZWFmZDZjNmE1IiwidXNlcl9pZCI6MX0.iUzM0ir5nMVgIn4R3o-Cnbl1ACG0qrWDavFwCCuC4OM"
+                    },
+                    {
+                        "key": "Accept",
+                        "value": "*/*",
+                        "disabled": true
+                    },
+                    {
+                        "key": "User-Agent",
+                        "value": "Thunder Client (https://www.thunderclient.com)",
+                        "disabled": true
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"id\": 3,\n  \"category\": \"2\",\n  \"product_name\": \"Signatu Sourdough\",\n  \"costprice\": 45,\n  \"sellingprice\": 100,\n  \"description\": \"Made of Premium French flour with La Levain sourdough starter.\",\n  \"stock\": 30,\n  \"category1\": \"2\",\n  \"category2\": \"5\",\n  \"ingredient1\": \"1\",\n  \"ingredient2\": \"2\",\n  \"ingredient3\": \"17\",\n  \"ingredient4\": \"16\",\n  \"ingredient5\": null,\n  \"ingredient6\": null,\n  \"ingredient7\": null,\n  \"ingredient8\": null,\n  \"ingredient9\": null\n}"
+                }
+            }
+        },
+        {
+            "name": "GET PRODUCTS",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://127.0.0.1:8000/products/",
+                    "path": [
+                        "products"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8000"
+                }
+            }
+        }
+    ]
+}
